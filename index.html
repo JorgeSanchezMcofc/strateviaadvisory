@@ -242,6 +242,18 @@
   .rec-item .when { font-size: .85rem; color: var(--ink-faint); }
   @media (max-width: 860px) { .now-card { grid-template-columns: 1fr; } .rec { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 520px) { .rec { grid-template-columns: 1fr; } }
+  .feat-head { margin: 2.4rem 0 1rem; font-family: var(--display); font-size: 1.35rem; }
+  .feat { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .feat a, .feat .soon { position: relative; display: grid; gap: .35rem; align-content: start; min-height: 8.5rem; padding: 1.3rem 1.35rem 1.2rem; border-radius: 18px; background: var(--card); border-top: 6px solid var(--c); box-shadow: var(--shadow); text-decoration: none; color: inherit; transition: transform .25s ease; }
+  .feat a:hover { transform: translateY(-4px); }
+  .feat .n { font-family: var(--display); font-size: 1.5rem; font-weight: 600; color: var(--c); line-height: 1; }
+  .feat .t { font-weight: 700; font-size: 1.05rem; line-height: 1.3; }
+  .feat .sub { font-size: .9rem; color: var(--ink-faint); }
+  .feat .src { margin-top: auto; font-size: .85rem; color: var(--ink-faint); }
+  .feat a .src::after { content: " →"; }
+  .feat .soon { background: transparent; box-shadow: none; border: 2px dashed var(--c); place-content: center; text-align: center; }
+  @media (max-width: 860px) { .feat { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .feat { grid-template-columns: 1fr; } }
 
   /* Testimonials + research */
   .quotes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
@@ -463,7 +475,16 @@
         <div class="rec-item rv" style="--c: var(--teal); --d: .06s"><span class="fig2">6</span><span class="what">Published works on leadership</span><span class="when">Academia · 2018 to 2024</span></div>
         <div class="rec-item rv" style="--c: var(--coral); --d: .12s"><span class="fig2">2</span><span class="what">National boards, incl. KIPPRA Vice-Chair</span><span class="when">Policy &amp; governance</span></div>
       </div>
-      <p class="note">To add: 2 or 3 recent speaking and community engagements.</p>
+      <h3 class="feat-head rv">In the community</h3>
+      <div class="feat">
+        <a class="rv" href="https://kcplazarotary.org/speakers/40ca396c-fcaa-401f-a10f-ba0c44deb4f9" target="_blank" rel="noopener noreferrer" style="--c: var(--teal)"><span class="n">01</span><span class="t">Growing Partnerships</span><span class="sub">Rotary Plaza, Kansas City, Missouri</span><span class="src">Plaza Rotary Club</span></a>
+        <a class="rv" href="https://startlandnews.com/2025/04/1-million-cups-kauffman-foundation/" target="_blank" rel="noopener noreferrer" style="--c: var(--coral); --d: .06s"><span class="n">02</span><span class="t">In the Community</span><span class="src">Startland News</span></a>
+        <a class="rv" href="https://journalism.unl.edu/person/emmah-muema/" target="_blank" rel="noopener noreferrer" style="--c: var(--navy-2); --d: .12s"><span class="n">03</span><span class="t">The Scholar</span><span class="src">University of Nebraska–Lincoln</span></a>
+        <a class="rv" href="https://startlandnews.com/2025/04/1-million-cups-kauffman-foundation/" target="_blank" rel="noopener noreferrer" style="--c: var(--gold-ink)"><span class="n">04</span><span class="t">The Beginning of the Transformation</span><span class="src">Startland News</span></a>
+        <a class="rv" href="https://www.dailynebraskan.com/culture/unl-hosts-cultural-cuisine-night-at-cather-dining-hall-for-spring-in-paris/article_dec100a0-d40f-11ed-af7f-b72e9166543b.html" target="_blank" rel="noopener noreferrer" style="--c: var(--teal); --d: .06s"><span class="n">05</span><span class="t">Replicable Results</span><span class="sub">Across industries</span><span class="src">Daily Nebraskan</span></a>
+        <a class="rv" href="https://www.linkedin.com/posts/great-to-see-ded-alum-emma-muema-thriving-share-7315044962692177922-Hd9n/" target="_blank" rel="noopener noreferrer" style="--c: var(--coral); --d: .12s"><span class="n">06</span><span class="t">Relationships That Last</span><span class="src">LinkedIn</span></a>
+        <div class="soon rv" style="--c: var(--navy-2)"><span class="n">07</span><span class="t">More to come!</span></div>
+      </div>
     </div>
   </section>
 
