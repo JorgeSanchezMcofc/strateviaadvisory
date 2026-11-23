@@ -158,7 +158,8 @@
   .reel .play { width: 5rem; height: 5rem; border-radius: 50%; background: var(--gold); color: #1B1404; display: grid; place-items: center; margin: 0 auto .9rem; font-size: 1.6rem; padding-left: .3rem; animation: pulse 2.4s ease-in-out infinite; }
   @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(242,179,61,.55); } 50% { box-shadow: 0 0 0 16px rgba(242,179,61,0); } }
   .reel strong { display: block; font-family: var(--display); font-weight: 500; font-size: 1.6rem; }
-  .shots { display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; gap: 1.1rem; }
+  .shots { display: flex; flex-direction: column; gap: 1.1rem; min-width: 0; }
+  .shots .shot.tall { flex: 1; }
   .shot.tall { grid-row: span 2; min-height: 18rem; }
   .shot { border-radius: 18px; display: grid; place-items: end start; padding: 1rem; color: #fff; font-weight: 700; font-size: .95rem; background: var(--c); position: relative; overflow: hidden; min-height: 7rem; }
   .shot::before { content: "+ photo"; position: absolute; top: .8rem; right: .9rem; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; opacity: .7; }
@@ -397,7 +398,8 @@
           <p class="reel-cap">Opened the Entrepreneurs Access Network session · JW Marriott Palm Desert, CA · November 12, 2025</p>
         </div>
         <div class="shots">
-          <div class="shot has-img tall" style="--c: var(--coral)"><img src="img/stage-dallas.jpg" style="object-position: 50% 40%" alt="Dr. Emmah Muema speaking at a podium" loading="lazy"><span>On stage · Dallas</span></div>
+          <div class="shot has-img tall" style="--c: var(--coral)"><img src="img/stage-dallas.jpg" style="object-position: 50% 40%" alt="Dr. Emmah Muema speaking at the Young Entrepreneurs Academy National Competition in Dallas, Texas" loading="lazy"><span>On stage · Dallas</span></div>
+          <p class="reel-cap">National judge, Young Entrepreneurs Academy (YEA!) National Competition · Dallas, TX · June 12, 2026</p>
         </div>
         </div>
       </div>
